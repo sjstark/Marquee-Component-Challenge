@@ -56,6 +56,10 @@ $breakpoint-tablet: 768px;
     letter-spacing: -2.2px;
 
     color: var(--white);
+
+    @media screen and (max-width: ($breakpoint-tablet)) {
+      font-size: 4.25rem;
+    }
   }
 
   h2 {
@@ -95,7 +99,7 @@ $breakpoint-tablet: 768px;
 
     background:none;
     border: solid 1px var(--white);
-    color: white;
+    color: var(--white);
 
     font-size: 0.688rem;
     font-weight: 700;
