@@ -1,0 +1,64 @@
+.layout {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.179rem;
+  width: 100%;
+
+
+  &__abc-logo {
+    width: 4.728rem;
+    height: 2.363rem;
+    object-fit: contain;
+  }
+
+  &__menu {
+    width: 4.563rem;
+    height: 4.875rem;
+
+    margin-top: 1rem;
+
+    font-size: 0.875rem;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+
+    color: var(--white);
+  }
+
+  &__navlink {
+    text-decoration: none;
+
+    &:visited {
+      color: inherit;
+    }
+
+    &:hover {
+      color: var(--gold);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__contact-btn {
+    background:none;
+    border: solid 1px var(--white);
+    color: white;
+    width: 8.688rem;
+    height: 2.625rem;
+    padding: 0.75rem 0.063rem 0.75rem 0;
+
+    font-size: 0.938rem;
+    font-weight: bold;
+
+    text-align: center;
+
+    &:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+  }
+}

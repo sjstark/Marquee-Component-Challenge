@@ -1,0 +1,14 @@
+.main-content {
+  position: relative;
+
+  min-width: 320px;
+  max-width: 1440px;
+
+  min-height: 100vh;
+
+  margin:auto;
+  padding: 0 calc(clamp(1vw, 5rem, 8rem));
+
+  display: flex;
+  flex-direction: column;
+}

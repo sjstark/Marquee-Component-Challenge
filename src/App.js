@@ -1,16 +1,11 @@
 import React from 'react';
 
-import LayoutUI from './components/LayoutUI'
-import PageUI from './components/PageUI'
+import MainContent from './components/MainContent'
 
-import { pages } from './content.json'
 
 function App() {
   return (
-    <>
-      <LayoutUI pages={pages} />
-      <PageUI />
-    </>
+    <MainContent />
   );
 }
 

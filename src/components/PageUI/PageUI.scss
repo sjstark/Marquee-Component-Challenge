@@ -1,0 +1,123 @@
+$breakpoint-tablet: 768px;
+
+.page{
+  &__background{
+
+
+    position:fixed;
+    left: 0;
+    top:0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #303030;
+
+    z-index: -5;
+  }
+}
+
+
+.marquee {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  color: var(--white);
+
+  overflow-wrap: break-word;
+
+  &__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media screen and (max-width: ($breakpoint-tablet)) {
+      flex-direction: column;
+    }
+  }
+
+
+  h1 {
+    max-width: 38rem;
+    width: 100%;
+
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+
+    font-size: 5.25rem;
+    font-weight: bold;
+    letter-spacing: -2.2px;
+
+    color: var(--white);
+  }
+
+  h2 {
+    max-width: 25rem;
+    width: 100%;
+
+    font-size: 0.875rem;
+    line-height: 1.86;
+
+    color: var(--white);
+  }
+
+}
+
+
+.cta {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: ($breakpoint-tablet)) {
+    flex-direction: column;
+  }
+
+  padding: 4.6rem;
+
+  background-color: var(--white);
+
+  &__message {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: -0.63px;
+    color: var(--black);
+  }
+
+  &__button {
+
+    background:none;
+    border: solid 1px var(--white);
+    color: white;
+
+    font-size: 0.688rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    color: var(--black);
+
+    &-arrow{
+      margin-left: .8rem;
+
+      font-size: 1.5rem;
+      line-height: 1;
+
+      color: var(--gold);
+    }
+
+    &:hover {
+      color: var(--gold);
+    }
+
+    @media screen and (max-width: ($breakpoint-tablet)) {
+      margin-top:3rem;
+    }
+  }
+}
