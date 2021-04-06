@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 import LayoutUI from '../LayoutUI'
 import PageUI from '../PageUI'
