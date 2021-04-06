@@ -6,7 +6,7 @@ import PageUI from '../PageUI'
 import { pages } from '../../content.json'
 
 import './MainContent.scss'
-import { Route, Switch } from 'react-router'
+import { Redirect, Route, Switch } from 'react-router'
 
 export default function MainContent() {
 
@@ -23,7 +23,7 @@ export default function MainContent() {
           ))
         }
         <Route path="/">
-          <PageUI blocks={[{}]} />
+          <Redirect to="/industries" />
         </Route>
       </Switch>
     </div>
