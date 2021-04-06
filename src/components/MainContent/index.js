@@ -12,7 +12,6 @@ export default function MainContent() {
 
   return (
     <div className="main-content">
-      {/* <div style={{ backgroundColor: "#303030", width: "100vw", height: "100vh", position: "absolute", zIndex: -20, left: 0 }} /> */}
       <LayoutUI pages={pages} />
       <Switch>
         {pages &&
