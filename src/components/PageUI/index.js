@@ -11,7 +11,8 @@ export default function PageUI({ blocks }) {
   // Use state for current block allows us to paginate blocks in the future
   // I noticed that blocks were arrays rather than just an object, so there's
   // potential for more than one block per page.
-  const [currentBlock, setCurrentBlock] = useState(blocks[0])
+  // setCurrentBlock is removed for build
+  const [currentBlock, /*setCurrentBlock */] = useState(blocks[0])
 
   return (
     <>
